@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/activity_back"
+    tools:context="leafstudios.hangman.MainActivity">
+
+    <Button
+        android:text="New Easy Game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/easyButton"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/titleName"
+        android:layout_alignStart="@+id/titleName"
+        android:layout_alignEnd="@+id/titleName" />
+
+    <Button
+        android:text="New Medium Game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mediumButton"
+        android:layout_below="@+id/easyButton"
+        android:layout_alignStart="@+id/easyButton"
+        android:layout_marginTop="30dp"
+        android:layout_alignEnd="@+id/easyButton" />
+
+    <Button
+        android:text="New Hard Game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hardButton"
+        android:layout_below="@+id/mediumButton"
+        android:layout_alignStart="@+id/mediumButton"
+        android:layout_marginTop="30dp"
+        android:layout_alignEnd="@+id/mediumButton" />
+
+    <TextView
+        android:text="00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/easyNum"
+        android:textSize="25dp"
+        android:layout_alignBaseline="@+id/easyHi"
+        android:layout_alignBottom="@+id/easyHi"
+        android:layout_alignEnd="@+id/hardButton"
+        android:layout_toEndOf="@+id/hardHi" />
+
+    <TextView
+        android:text="EASY:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/easyHi"
+        android:textSize="25dp"
+        android:layout_above="@+id/mediumHi"
+        android:layout_alignStart="@+id/mediumHi"
+        android:layout_marginBottom="20dp"
+        android:layout_toStartOf="@+id/easyNum" />
+
+    <TextView
+        android:text="00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mediumNum"
+        android:textSize="25dp"
+        android:layout_alignBaseline="@+id/mediumHi"
+        android:layout_alignBottom="@+id/mediumHi"
+        android:layout_alignEnd="@+id/easyNum"
+        android:layout_toEndOf="@+id/mediumHi" />
+
+    <TextView
+        android:text="MEDIUM:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:id="@+id/mediumHi"
+        android:textSize="25dp"
+        android:layout_above="@+id/hardHi"
+        android:layout_alignStart="@+id/hardHi" />
+
+    <TextView
+        android:text="00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hardNum"
+        android:textSize="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/mediumNum"
+        android:layout_toEndOf="@+id/hardHi" />
+
+    <TextView
+        android:text="HARD:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hardHi"
+        android:textSize="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/hardButton" />
+
+    <TextView
+        android:text="@string/hi_score_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hardButton"
+        android:layout_alignStart="@+id/hardButton"
+        android:layout_marginTop="15dp"
+        android:id="@+id/hiTitle"
+        android:textSize="25dp"
+        android:layout_alignEnd="@+id/hardButton" />
+
+    <TextView
+        android:text="Hangman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleName"
+        android:textSize="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

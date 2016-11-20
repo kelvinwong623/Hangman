@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Hangman</string>
+    <string name="hi_score_title"><u>Hi-Score</u></string>
+    <color name="activity_back">#CCCCCC</color>
+</resources>
