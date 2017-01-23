@@ -13,7 +13,7 @@
     >
 
     <Button
-        android:text="Hi-Scores"
+        android:text="@string/hiName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/playButton"
         android:layout_marginTop="40dp"
-        android:onClick ="sendMessage"
+        android:onClick ="playGame"
         android:layout_below="@+id/titleName"
         android:layout_alignEnd="@+id/titleName"
         android:layout_alignStart="@+id/titleName" />
